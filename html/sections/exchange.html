@@ -10,37 +10,39 @@
         </div>
         <div class="panel__content">
             <div class="exchange">
-                <form method="GET" action="payment.html" class="exchange__content">
-                    <div class="exchange__col">
-                        <div class="exchange__item field">
-                            <label for="subject" class="field__label">Отдаете (BTC)</label>
-                            <input id="subject" type="text" class="field__input input js-subject-input" placeholder="Сумма для обмена"/>
-                            <div class="field__tip">От 0,0005 BTC</div>
+                <form method="GET" action="payment.html">
+                    <div class="exchange__content">
+                        <div class="exchange__col">
+                            <div class="exchange__item field">
+                                <label for="subject" class="field__label">Отдаете (BTC)</label>
+                                <input id="subject" type="text" class="field__input input js-subject-input" placeholder="Сумма для обмена"/>
+                                <div class="field__tip">От 0,0005 BTC</div>
+                            </div>
+                            <div class="exchange__item field">
+                                <label for="wallet" class="field__label">Ethereum кошелек</label>
+                                <input id="wallet" type="text" class="field__input input" placeholder="0xa123b4567c8910d123eefa987654321"/>
+                            </div>
                         </div>
-                        <div class="exchange__item field">
-                            <label for="wallet" class="field__label">Ethereum кошелек</label>
-                            <input id="wallet" type="text" class="field__input input" placeholder="0xa123b4567c8910d123eefa987654321"/>
+                        <div class="exchange__col">
+                            <div class="exchange__item field">
+                                <label for="object" class="field__label">Получаете (ETH)</label>
+                                <input id="object" type="text" class="field__input input js-object-input" placeholder="Сумма для получения"/>
+                                <div class="field__tip">Макс.: 74 283 ETH</div>
+                            </div>
+                            <div class="exchange__item field">
+                                <label for="email" class="field__label">Почта</label>
+                                <input id="email" type="text" class="field__input input" placeholder="address@example.com"/>
+                            </div>
                         </div>
                     </div>
-                    <div class="exchange__col">
-                        <div class="exchange__item field">
-                            <label for="object" class="field__label">Получаете (ETH)</label>
-                            <input id="object" type="text" class="field__input input js-object-input" placeholder="Сумма для получения"/>
-                            <div class="field__tip">Макс.: 74 283 ETH</div>
-                        </div>
-                        <div class="exchange__item field">
-                            <label for="email" class="field__label">Почта</label>
-                            <input id="email" type="text" class="field__input input" placeholder="address@example.com"/>
-                        </div>
+                    <div class="exchange__footer">
+                        <label class="exchange__checkbox checkbox">Я принимаю <a href="#" class="link">условия пользования</a>
+                            <input type="checkbox" class="checkbox__field">
+                            <span class="checkbox__checkmark"></span>
+                        </label>
+                        <button class="exchange__btn btn btn--primary">Перейти к оплате</button>
                     </div>
                 </form>
-                <div class="exchange__footer">
-                    <label class="exchange__checkbox checkbox">Я принимаю <a href="#" class="link">условия пользования</a>
-                        <input type="checkbox" class="checkbox__field">
-                        <span class="checkbox__checkmark"></span>
-                    </label>
-                    <button class="exchange__btn btn btn--primary">Перейти к оплате</button>
-                </div>
             </div>
         </div>
     </div>
