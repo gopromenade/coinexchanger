@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Обмен криптовалют | Монетообменник</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <div class="overflow"></div>
+        
+<main class="app">
+    <div class="app__navigation-m navigation-m">
+    <div class="navigation-m__header">
+        <div class="heading heading--h4">Меню</div>
+        <div class="navigation-m__close"><span class="iconify" data-icon="ant-design:close-outlined"></span></div>
+    </div>
+    <div class="navigation-m__content">
+        <nav class="navigation-m__menu menu">
+            <a href="#" class="menu__item link link--primary">Главная</a>
+            <a href="#" class="menu__item link link--primary">Обмен</a>
+            <a href="#" class="menu__item link link--primary">Особенности</a>
+            <a href="#" class="menu__item link link--primary">Отзывы</a>
+        </nav>
+    </div>
+    <div class="navigation-m__footer">
+        <div class="account">
+            <a href="sign-in.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="fluent:arrow-enter-20-filled"></span> Вход</a>
+            <a href="sign-up.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="ant-design:user-add-outlined"></span> Регистрация</a>
+        </div>
+    </div>
+</div>
+    <header class="header">
+    <div class="navigation">
+    <div class="navigation__container">
+        <div class="container">
+            <div class="navigation__header">
+                <div class="navigation__info">
+                    <div class="socials">
+                        <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:telegram"></span></a>
+                        <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:facebook"></span></a>
+                        <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="akar-icons:youtube-fill"></span></a>
+                    </div>
+                    <div class="navigation__divider"></div>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-control dropdown-link link">RU <span class="dropdown-link__icon link__icon link__icon--xs link__icon--right iconify" data-icon="bxs:chevron-down"></span></a>
+                        <div class="dropdown__content">
+                            <a href="#" class="dropdown__item link">Українська</a>
+                            <a href="#" class="dropdown__item link">English</a>
+                            <a href="#" class="dropdown__item link">Русский</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation__account account">
+                    <a href="sign-in.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="fluent:arrow-enter-20-filled"></span> Вход</a>
+                    <a href="sign-up.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="ant-design:user-add-outlined"></span> Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navigation__content">
+            <a href="/" class="navigation__logo logo"><img src="../images/logo.svg" alt="" class="logo__image"> <span class="logo__name">МОНЕТООБМЕННИК</span></a>
+            <nav class="navigation__menu menu">
+                <a href="/" class="menu__item link link--primary">Главная</a>
+                <a href="#exchange" class="menu__item link link--primary">Обмен</a>
+                <a href="#features" class="menu__item link link--primary">Особенности</a>
+                <a href="#testimonials" class="menu__item link link--primary">Отзывы</a>
+            </nav>
+            <span class="navigation__burger icon-burger"></span>   
+        </div>
+    </div>
+</div>
+</header>
+    <div class="app__panel app__panel--centered">
+    <div class="panel">
+        <div class="panel__header">
+            <div class="panel__heading heading heading--h4">Регистрация</div>
+        </div>
+        <div class="panel__content">
+            <div class="sign-in">
+                <div class="social-btns">
+                    <button class="social-btns__item btn btn--secondary"><span class="iconify" data-icon="bxl:facebook"></span></button>
+                    <button class="social-btns__item btn btn--secondary"><span class="iconify" data-icon="bxl:telegram"></span></button>
+                    <button class="social-btns__item btn btn--secondary"><span class="iconify" data-icon="bxl:gmail"></span></button>
+                </div>
+                <div class="sign-in__divider"></div>
+                <form method="POST" action="#" class="sign-in__form">
+                    <div class="sign-in__item field">
+                        <label for="mail" class="field__label">Почта</label>
+                        <input id="mail" type="text" class="field__input input" placeholder="address@example.com"/>
+                    </div>
+                    <div class="sign-in__item field">
+                        <label for="password" class="field__label">Пароль</label>
+                        <input id="password" type="text" class="field__input input" placeholder="Не менее 6 символов"/>
+                    </div>
+                    <div class="sign-in__item field">
+                        <label for="password-repeat" class="field__label">Повторите пароль</label>
+                        <input id="password-repeat" type="text" class="field__input input" placeholder="Не менее 6 символов"/>
+                    </div>
+                    <label class="sign-in__item checkbox">Я принимаю <a href="#" class="link">условия пользования</a>
+                        <input type="checkbox" class="checkbox__field">
+                        <span class="checkbox__checkmark"></span>
+                    </label>
+                    <button class="sign-in__item sign-in__btn btn btn--primary">Зарегистрироваться</button>
+                </form>
+                <div class="sign-in__footer">
+                    Уже есть аккаунт? <a href="sign-up.html" class="link">Авторизуйтесь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer footer--transparent">
+    <div class="container">
+        <div class="footer__header">
+            <a href="/" class="footer__logo logo"><img src="../images/logo.svg" alt="" class="logo__image"> <span class="logo__name">МОНЕТООБМЕННИК</span></a>
+            <nav class="menu">
+                <a href="/" class="menu__item link link--primary">Главная</a>
+                <a href="#exchange" class="menu__item link link--primary">Обмен</a>
+                <a href="#features" class="menu__item link link--primary">Особенности</a>
+                <a href="#tesimonials" class="menu__item link link--primary">Отзывы</a>
+            </nav>
+        </div>
+        <div class="footer__content">
+            <div class="footer__copyright">© 2022, Монетообменник. Все права защищены</div>
+            <div class="socials">
+                <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:telegram"></span></a>
+                <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:facebook"></span></a>
+                <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="akar-icons:youtube-fill"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

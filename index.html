@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Обмен криптовалют | Монетообменник</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <div class="overflow"></div>
+        
+<main class="app">
+    <div class="app__navigation-m navigation-m">
+    <div class="navigation-m__header">
+        <div class="heading heading--h4">Меню</div>
+        <div class="navigation-m__close"><span class="iconify" data-icon="ant-design:close-outlined"></span></div>
+    </div>
+    <div class="navigation-m__content">
+        <nav class="navigation-m__menu menu">
+            <a href="#" class="menu__item link link--primary">Главная</a>
+            <a href="#" class="menu__item link link--primary">Обмен</a>
+            <a href="#" class="menu__item link link--primary">Особенности</a>
+            <a href="#" class="menu__item link link--primary">Отзывы</a>
+        </nav>
+    </div>
+    <div class="navigation-m__footer">
+        <div class="account">
+            <a href="sign-in.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="fluent:arrow-enter-20-filled"></span> Вход</a>
+            <a href="sign-up.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="ant-design:user-add-outlined"></span> Регистрация</a>
+        </div>
+    </div>
+</div>
+    <header class="header">
+    <div class="navigation">
+    <div class="navigation__container">
+        <div class="container">
+            <div class="navigation__header">
+                <div class="navigation__info">
+                    <div class="socials">
+                        <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:telegram"></span></a>
+                        <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:facebook"></span></a>
+                        <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="akar-icons:youtube-fill"></span></a>
+                    </div>
+                    <div class="navigation__divider"></div>
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-control dropdown-link link">RU <span class="dropdown-link__icon link__icon link__icon--xs link__icon--right iconify" data-icon="bxs:chevron-down"></span></a>
+                        <div class="dropdown__content">
+                            <a href="#" class="dropdown__item link">Українська</a>
+                            <a href="#" class="dropdown__item link">English</a>
+                            <a href="#" class="dropdown__item link">Русский</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation__account account">
+                    <a href="sign-in.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="fluent:arrow-enter-20-filled"></span> Вход</a>
+                    <a href="sign-up.html" class="account__item link"><span class="link__icon link__icon--left iconify" data-icon="ant-design:user-add-outlined"></span> Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="navigation__content">
+            <a href="/" class="navigation__logo logo"><img src="../images/logo.svg" alt="" class="logo__image"> <span class="logo__name">МОНЕТООБМЕННИК</span></a>
+            <nav class="navigation__menu menu">
+                <a href="/" class="menu__item link link--primary">Главная</a>
+                <a href="#exchange" class="menu__item link link--primary">Обмен</a>
+                <a href="#features" class="menu__item link link--primary">Особенности</a>
+                <a href="#testimonials" class="menu__item link link--primary">Отзывы</a>
+            </nav>
+            <span class="navigation__burger icon-burger"></span>   
+        </div>
+    </div>
+</div>
+</header>
+    <div class="hero">
+    <div class="hero__decor"></div>
+    <div class="container">
+        <h1 class="hero__heading heading heading--h1">Быстрый обмен для  <span class="heading__highlight">20+</span> <br/> направлений</h1>
+        <div class="hero__counters hero-counters">
+            <div class="hero-counters__item counter">
+                <div class="counter__value heading heading--h3"><span class="counter-operations">1104</span></div>
+                <div class="counter__desc">обменов за время <br/>работы проекта</div>
+            </div>
+            <div class="hero__divider"></div>
+            <div class="hero-counters__item counter">
+                <div class="counter__value heading heading--h3"><span class="counter-testimonials">100</span>+</div>
+                <div class="counter__desc">положительных <br/>отзывов о проекте</div>
+            </div>
+            <div class="hero__divider"></div>
+            <div class="hero-counters__item counter">
+                <div class="counter__value heading heading--h3"><span class="counter-directions">27</span></div>
+                <div class="counter__desc">Направлений обмена <br/>доступно</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="exchange"></div>
+    <div class="exchange-form">
+    <div class="container">
+        <div class="exchange-form__content">
+            <div class="exchange-form__subject">
+                <div class="exchange-form__heading heading heading--h3">Отдаю</div>
+                <div class="exchange-form__search input-wrapper">
+                    <span class="input__icon iconify" data-icon="ant-design:search-outlined"></span>
+                    <input type="text" class="exchange-form__search--subject input input__addon js-search-subject" placeholder="Валюта для обмена" />
+                </div>
+                <div class="exchange-form__list currency-list currency-list--subject">
+                    
+                </div>
+                <button class="exchange-form__btn btn btn--secondary btn--sm">Показать еще</button>
+            </div>
+            <div class="exchange-form__object">
+                <div class="exchange-form__heading heading heading--h3">Получаю</div>
+                <div class="exchange-form__search input-wrapper">
+                    <span class="input__icon iconify" data-icon="ant-design:search-outlined"></span>
+                    <input type="text" class="exchange-form__search--object  input input__addon js-search-object" placeholder="Валюта для получения" />
+                </div>
+                <div class="exchange-form__list currency-list currency-list--object">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="exchange-form-m">
+    <div class="container">
+        <form method="GET" action="payment.html">
+            <div class="exchange-form-m__content">
+                <div class="exchange-form-m__subject">
+                    <div class="exchange-form-m__heading heading heading--h3">Отдаю</div>
+                    <div class="exchange-form-m__field">
+                        <div class="dropdown">
+                            <div class="dropdown-control dropdown-btn">
+                                <div class="dropdown-btn__header">
+                                    <div class="dropdown-btn__cover">
+                                        <img src="../images/currencies/btc.png" alt="" class="dropdown-btn__image js-subject-image" />
+                                    </div> 
+                                    <span class="js-subject-name"></span>
+                                </div>
+                                <span class="dropdown-btn__icon iconify" data-icon="bxs:chevron-down"></span>
+                            </div>
+                            <div class="exchange-form-m__dropdown dropdown__content">
+                                <div class="exchange-form-m__search input-wrapper">
+                                    <span class="input__icon iconify" data-icon="ant-design:search-outlined"></span>
+                                    <input type="text" class="input input__addon js-search-subject" placeholder="Валюта для получения" />
+                                </div>
+                                <div class="currency-list currency-list--subject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange-form-m__input-wrap">
+                            <input type="text" class="input js-subject-input" placeholder="Сумма для обмена" />
+                        </div>
+                    </div>
+                    <div class="secondary-text">От <span class="exchange-form-m__min">0</span> до <span class="exchange-form-m__max">0</span> BTC</div>
+                </div>
+                <div class="exchange-form-m__object">
+                    <div class="exchange-form-m__heading heading heading--h3">Получаю</div>
+                    <div class="exchange-form-m__field">
+                        <div class="dropdown">
+                            <div class="dropdown-control dropdown-btn">
+                                <div class="dropdown-btn__header">
+                                    <div class="dropdown-btn__cover">
+                                        <img src="../images/currencies/btc.png" alt="" class="dropdown-btn__image js-object-image" />
+                                    </div> 
+                                    <span class="js-object-name"></span>
+                                </div>
+                                <span class="dropdown-btn__icon iconify" data-icon="bxs:chevron-down"></span>
+                            </div>
+                            <div class="exchange-form-m__dropdown dropdown__content">
+                                <div class="exchange-form-m__search input-wrapper">
+                                    <span class="input__icon iconify" data-icon="ant-design:search-outlined"></span>
+                                    <input type="text" class="input input__addon js-search-object" placeholder="Валюта для получения" />
+                                </div>
+                                <div class="currency-list currency-list--object-mobile">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange-form-m__input-wrap">
+                            <input type="text" class="input js-object-input" placeholder="Сумма для получения" />
+                        </div>
+                    </div>
+                    <div class="secondary-text exchange-form-m__rate"></div>
+                </div>
+            </div>
+            <button class="btn btn--primary">Продолжить</button>
+        </form>
+    </div>
+</div>
+    <div id="features" class="features">
+    <div class="container">
+        <div class="features__container">
+            <div class="features__header">
+                <div class="features__primary">
+                    <div class="features__caption caption">
+                        <div class="caption__content">Почему мы?</div>
+                    </div>
+                    <div class="features__heading heading heading--h2">Преимущества сервиса</div>
+                </div>
+                <div class="features__secondary">
+                    <div class="features__desc">
+                        Но постоянное информационно-пропагандистское обеспечение нашей деятельности создаёт необходимость включения в производственный план целого ряда мероприятий
+                    </div>
+                    <div class="features__divider"></div>
+                    <a href="#" class="features__link link link--primary">Начать обмен →</a>
+                </div>
+            </div>
+            <div class="features__content">
+                <div class="feature feature--border-right feature--border-bottom">
+                    <div class="feature__icon"><span class="iconify" data-icon="clarity:wallet-line"></span></div>
+                    <div class="feature__content">
+                        <div class="feature__heading heading heading--h4">Выгодный курс</div>
+                        <div class="feature__desc">Следует отметить, что существующая теория способствует подготовке и реализации задуменных возможностей</div>
+                    </div>
+                </div>
+                <div class="feature feature--border-bottom">
+                    <div class="feature__icon"><span class="iconify" data-icon="fluent:top-speed-24-regular"></span></div>
+                    <div class="feature__content">
+                        <div class="feature__heading heading heading--h4">Мгновенный обмен</div>
+                        <div class="feature__desc">С другой стороны, перспективное планирование требует определения и уточнения новых</div>
+                    </div>
+                </div>
+                <div class="feature feature--border-right">
+                    <div class="feature__icon"><span class="iconify" data-icon="carbon:money"></span></div>
+                    <div class="feature__content">
+                        <div class="feature__heading heading heading--h4">Много направлений</div>
+                        <div class="feature__desc">Картельные сговоры не допускают ситуации, при которой предприниматели в сети интернет являются только методом</div>
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__icon"><span class="iconify" data-icon="ant-design:safety-outlined"></span></div>
+                    <div class="feature__content">
+                        <div class="feature__heading heading heading--h4">Безопасность</div>
+                        <div class="feature__desc">Идейные соображения высшего порядка, а также высокое качество позиционных исследований играет значение</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="cta">
+    <a href="#" class="cta__logo logo"><img src="../images/logo.svg" alt="" class="logo__image"> <span class="logo__name">МОНЕТООБМЕННИК</span></a>
+    <div class="cta__heading heading heading--h2">Совершите обмен на более 20 направлений </div>
+    <div class="cta__divider"></div>
+    <button class="btn btn--primary">Начать обмен</button>
+</div>
+    <div id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="testimonials__header">
+            <div class="testimonials__caption caption">
+                <div class="caption__content">Говорят о нас?</div>
+            </div>
+            <div class="heading heading--h2">Отзывы клиентов</div>
+        </div>
+        <div class="testimonials__content">
+            <div class="testimonials__col">
+                <div class="testimonials__item testimonial">
+                    <div class="testimonial__content">Вот вам яркий пример современных тенденций — глубокий уровень погружения позволяет выполнить важные задания по разработке благоприятных перспектив. В своём стремлении улучшить пользовательский опыт мы упускаем, что многие известные личности ограничены исключительно образом мышления. Не следует, однако, забывать, что сплочённость команды профессионалов является качественно новой ступенью своевременного выполнения сверхзадачи.</div>
+                    <div class="testimonial__footer">
+                        <div class="testimonial__person">
+                            <div class="testimonial__avatar"><img src="../images/avatars/1.png" class="testimonial__image"  alt=""/></div>
+                            <div class="tesimonial__data">
+                                <div class="testimonial__name">Riclillet</div>
+                                <div class="testimonial__direction">BTC → ETH</div>
+                            </div>
+                        </div>
+                        <img src="../images/quote.svg" class="testimonial__decor" alt=""/>
+                    </div>
+                </div>
+                <div class="testimonials__item testimonial">
+                    <div class="testimonial__content">Однозначно, стремящиеся вытеснить традиционное производство, нанотехнологии, инициированные исключительно синтетически, функционально разнесены на независимые элементы.</div>
+                    <div class="testimonial__footer">
+                        <div class="testimonial__person">
+                            <div class="testimonial__avatar"><img src="../images/avatars/2.png" class="testimonial__image"  alt=""/></div>
+                            <div class="tesimonial__data">      
+                                <div class="testimonial__name">Balemar</div>
+                                <div class="testimonial__direction">DOGE → TRX</div>
+                            </div>
+                        </div>
+                        <img src="../images/quote.svg" class="testimonial__decor" alt=""/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials__col">
+                <div class="testimonials__item testimonial">
+                    <div class="testimonial__content">Но действия представителей оппозиции являются только методом политического участия и разоблачены. Повседневная практика показывает, что сплочённость команды профессионалов требует анализа приоретизации разума над эмоциями.</div>
+                    <div class="testimonial__footer">
+                        <div class="testimonial__person">
+                            <div class="testimonial__avatar"><img src="../images/avatars/5.png" class="testimonial__image"  alt=""/></div>
+                            <div class="tesimonial__data">   
+                                <div class="testimonial__name">Fiela</div>
+                                <div class="testimonial__direction">BTC → DOGE</div>
+                            </div>
+                        </div>
+                        <img src="../images/quote.svg" class="testimonial__decor" alt=""/>
+                    </div>
+                </div>
+                <div class="testimonials__item testimonial">
+                    <div class="testimonial__content">А ещё сделанные на базе интернет-аналитики выводы лишь добавляют фракционных разногласий и заблокированы в рамках своих собственных рациональных ограничений. Внезапно, сторонники тоталитаризма в науке призывают нас к новым свершениям, которые, в свою очередь, должны быть превращены в посмешище.</div>
+                    <div class="testimonial__footer">
+                        <div class="testimonial__person">
+                            <div class="testimonial__avatar"><img src="../images/avatars/3.png" class="testimonial__image"  alt=""/></div>
+                            <div class="tesimonial__data">  
+                                <div class="testimonial__name">Lan</div>
+                                <div class="testimonial__direction">BTC → ETH</div>
+                            </div>
+                        </div>
+                        <img src="../images/quote.svg" class="testimonial__decor"  alt=""/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials__col">
+                <div class="testimonials__item testimonial">
+                    <div class="testimonial__content">И нет сомнений, что представители современных социальных резервов, вне зависимости от их уровня, должны быть призваны к ответу. Предварительные выводы неутешительны: граница обучения кадров напрямую зависит от приоретизации разума над эмоциями. А ещё сделанные на базе интернет-аналитики выводы, превозмогая сложившуюся непростую экономическую ситуацию, объявлены нарушающими общечеловеческие нормы этики и морали!</div>
+                    <div class="testimonial__footer">
+                        <div class="testimonial__person">
+                            <div class="testimonial__avatar"><img src="../images/avatars/6.png" class="testimonial__image"  alt=""/></div>
+                            <div class="tesimonial__data">    
+                                <div class="testimonial__name">Nablieta</div>
+                                <div class="testimonial__direction">XRP → TRX</div>
+                            </div>
+                        </div>
+                        <img src="../images/quote.svg" class="testimonial__decor" alt=""/>
+                    </div>
+                </div>
+                <div class="testimonials__item testimonial">
+                    <div class="testimonial__content">Однозначно, предприниматели в сети интернет могут быть разоблачены! Имеется спорная точка зрения, гласящая примерно следующее: активно развивающиеся страны третьего мира, вне зависимости от их уровня, должны быть заблокированы в рамках своих собственных рациональных ограничений.</div>
+                    <div class="testimonial__footer">
+                        <div class="testimonial__person">
+                            <div class="testimonial__avatar"><img src="../images/avatars/4.png" class="testimonial__image" alt="" /></div>
+                            <div class="tesimonial__data">  
+                                <div class="testimonial__name">Gell</div>
+                                <div class="testimonial__direction">ETH → BTC</div>
+                            </div>
+                        </div>
+                        <img src="../images/quote.svg" class="testimonial__decor" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+    <div class="container">
+        <div class="footer__header">
+            <a href="/" class="footer__logo logo"><img src="../images/logo.svg" alt="" class="logo__image"> <span class="logo__name">МОНЕТООБМЕННИК</span></a>
+            <nav class="menu">
+                <a href="/" class="menu__item link link--primary">Главная</a>
+                <a href="#exchange" class="menu__item link link--primary">Обмен</a>
+                <a href="#features" class="menu__item link link--primary">Особенности</a>
+                <a href="#tesimonials" class="menu__item link link--primary">Отзывы</a>
+            </nav>
+        </div>
+        <div class="footer__content">
+            <div class="footer__copyright">© 2022, Монетообменник. Все права защищены</div>
+            <div class="socials">
+                <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:telegram"></span></a>
+                <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="bxl:facebook"></span></a>
+                <a href="#" class="socials__item link"><span class="socials__icon iconify" data-icon="akar-icons:youtube-fill"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
