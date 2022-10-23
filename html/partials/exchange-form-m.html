@@ -1,0 +1,67 @@
+<div class="exchange-form-m">
+    <div class="container">
+        <form method="GET" action="payment.html">
+            <div class="exchange-form-m__content">
+                <div class="exchange-form-m__subject">
+                    <div class="exchange-form-m__heading heading heading--h3">Отдаю</div>
+                    <div class="exchange-form-m__field">
+                        <div class="dropdown">
+                            <div class="dropdown-control dropdown-btn">
+                                <div class="dropdown-btn__header">
+                                    <div class="dropdown-btn__cover">
+                                        <img src="./images/currencies/btc.png" alt="" class="dropdown-btn__image js-subject-image" />
+                                    </div> 
+                                    <span class="js-subject-name"></span>
+                                </div>
+                                <span class="dropdown-btn__icon iconify" data-icon="bxs:chevron-down"></span>
+                            </div>
+                            <div class="exchange-form-m__dropdown dropdown__content">
+                                <div class="exchange-form-m__search input-wrapper">
+                                    <span class="input__icon iconify" data-icon="ant-design:search-outlined"></span>
+                                    <input type="text" class="input input__addon js-search-subject" placeholder="Валюта для получения" />
+                                </div>
+                                <div class="currency-list currency-list--subject">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange-form-m__input-wrap">
+                            <input type="text" class="input js-subject-input" placeholder="Сумма для обмена" />
+                        </div>
+                    </div>
+                    <div class="secondary-text">От <span class="exchange-form-m__min">0</span> до <span class="exchange-form-m__max">0</span> BTC</div>
+                </div>
+                <div class="exchange-form-m__object">
+                    <div class="exchange-form-m__heading heading heading--h3">Получаю</div>
+                    <div class="exchange-form-m__field">
+                        <div class="dropdown">
+                            <div class="dropdown-control dropdown-btn">
+                                <div class="dropdown-btn__header">
+                                    <div class="dropdown-btn__cover">
+                                        <img src="./images/currencies/btc.png" alt="" class="dropdown-btn__image js-object-image" />
+                                    </div> 
+                                    <span class="js-object-name"></span>
+                                </div>
+                                <span class="dropdown-btn__icon iconify" data-icon="bxs:chevron-down"></span>
+                            </div>
+                            <div class="exchange-form-m__dropdown dropdown__content">
+                                <div class="exchange-form-m__search input-wrapper">
+                                    <span class="input__icon iconify" data-icon="ant-design:search-outlined"></span>
+                                    <input type="text" class="input input__addon js-search-object" placeholder="Валюта для получения" />
+                                </div>
+                                <div class="currency-list currency-list--object-mobile">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange-form-m__input-wrap">
+                            <input type="text" class="input js-object-input" placeholder="Сумма для получения" />
+                        </div>
+                    </div>
+                    <div class="secondary-text exchange-form-m__rate"></div>
+                </div>
+            </div>
+            <button class="btn btn--primary">Продолжить</button>
+        </form>
+    </div>
+</div>
